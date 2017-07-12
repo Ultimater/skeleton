@@ -46,5 +46,5 @@
         ├── var
         └── public
             ├── index.php (entry as "build" environment)
-            └── (either rewrite to ../../app/assets or allow webpack to place build here)
+            └── assets (either rewrite to ../../app/assets or allow webpack to place build here)
 ```
