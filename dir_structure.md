@@ -31,7 +31,8 @@
     │   │   └── useradd (command from commands.yml alias)
     │   ├── run (CLI entry as "development" environment)
     │   ├── public
-    │   │   └── index.php (web entry as "development" environment)
+    │   │   ├── index.php (web entry as "development" environment)
+    │   │   └── assets (either rewrite to ../../app/assets or proxy passthrough to webpack-dev-server)
     │   ├── weback.config.js
     │   ├── package.json
     │   ├── node_modules
@@ -46,5 +47,5 @@
         ├── var
         └── public
             ├── index.php (entry as "build" environment)
-            └── assets (either rewrite to ../../app/assets or allow webpack to place build here)
+            └── assets (either rewrite to ../../app/assets or webpack places static build here)
 ```
