@@ -1,4 +1,3 @@
-
 ```
 ├── application.yml
 ├── README.md
@@ -12,6 +11,7 @@
 │   │   ├── plugins
 │   │   └── views
 │   ├── config
+│   │   ├── commands.yml
 │   │   └── js.yml
 │   ├── js
 │   │   ├── entries
@@ -28,8 +28,10 @@
     ├── vendor
     ├── dev
     │   ├── bin
+    │   │   └── useradd (command from commands.yml alias)
+    │   ├── run (CLI entry as "development" environment)
     │   ├── public
-    │   │   └── index.php (entry as "development" environment)
+    │   │   └── index.php (web entry as "development" environment)
     │   ├── weback.config.js
     │   ├── package.json
     │   ├── node_modules
@@ -39,8 +41,10 @@
     │   └── vendor
     └── build
         ├── bin
+        │   └── useradd (command from commands.yml alias)
+        ├── run (CLI entry as "build" environment)
         ├── var
         └── public
             ├── index.php (entry as "build" environment)
-            └── (here either rewrite to ../../app/assets or allow webpack to place build here)
+            └── (either rewrite to ../../app/assets or allow webpack to place build here)
 ```
