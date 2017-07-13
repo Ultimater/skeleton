@@ -38,11 +38,11 @@
     │   ├── weback.config.js
     │   ├── package.json
     │   ├── node_modules
-    │   ├── var
-    │   │   ├── cache
-    │   │   ├── logs
-    │   │   ├── run (CLI entry as "development" environment)
-    │   │   └── scheduled-tasks.php
+    │   └─── var
+    │       ├── cache
+    │       ├── logs
+    │       ├── run (CLI entry as "development" environment)
+    │       └── scheduled-tasks.php
     ├── tests
     │   ├── composer.json
     │   └── vendor
