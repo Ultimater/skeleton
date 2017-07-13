@@ -41,7 +41,7 @@
     │   ├── var
     │   │   ├── cache
     │   │   ├── logs
-    │   │   └── run (CLI entry as "development" environment)
+    │   │   ├── run (CLI entry as "development" environment)
     │   │   └── scheduled-tasks.php
     ├── tests
     │   ├── composer.json
@@ -52,7 +52,7 @@
         ├── var
         │   ├── cache
         │   ├── logs
-        │   └── run (CLI entry as "build" environment)
+        │   ├── run (CLI entry as "build" environment)
         │   └── scheduled-tasks.php
         └── public
             ├── index.php (entry as "build" environment)
