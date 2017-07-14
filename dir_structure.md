@@ -33,8 +33,8 @@
     ├── vendor
     ├── dev
     │   ├── run (general CLI entry as "development" environment)
+    │   ├── scheduled-tasks.php (entry point for cronjob CLI access to run maintenance and send newsletters)
     │   ├── bin
-    │   │   ├── scheduled-tasks.php (entry point for cronjob CLI access to run maintenance and send newsletters)
     │   │   └── useradd (command from commands.yml alias)
     │   ├── public
     │   │   ├── index.php (web entry as "development" environment)
@@ -50,8 +50,8 @@
     │   └── vendor
     └── build
         ├── run (general CLI entry as "build" environment)
+        ├── scheduled-tasks.php (entry point for cronjob CLI access to run maintenance and send newsletters)
         ├── bin
-        │   ├── scheduled-tasks.php (entry point for cronjob CLI access to run maintenance and send newsletters)
         │   └── useradd (command from commands.yml alias)
         ├── var
         │   ├── cache
