@@ -1,3 +1,5 @@
+# Directory Structure
+
 ```
 ├── application.yml
 ├── README.md
@@ -30,7 +32,9 @@
     ├── composer.json
     ├── vendor
     ├── dev
+    │   ├── run (general CLI entry as "development" environment)
     │   ├── bin
+    │   │   ├── scheduled-tasks.php (entry point for cronjob CLI access to run maintenance and send newsletters)
     │   │   └── useradd (command from commands.yml alias)
     │   ├── public
     │   │   ├── index.php (web entry as "development" environment)
@@ -40,21 +44,33 @@
     │   ├── node_modules
     │   └─── var
     │       ├── cache
-    │       ├── logs
-    │       ├── run (CLI entry as "development" environment)
-    │       └── scheduled-tasks.php
+    │       └── logs
     ├── tests
     │   ├── composer.json
     │   └── vendor
     └── build
+        ├── run (general CLI entry as "build" environment)
         ├── bin
+        │   ├── scheduled-tasks.php (entry point for cronjob CLI access to run maintenance and send newsletters)
         │   └── useradd (command from commands.yml alias)
         ├── var
         │   ├── cache
         │   ├── logs
-        │   ├── run (CLI entry as "build" environment)
-        │   └── scheduled-tasks.php
         └── public
             ├── index.php (entry as "build" environment)
             └── assets (either rewrite to ../../app/assets or webpack places static build here)
 ```
+
+# Entry points
+
+**Development access**  
+`/env/dev/public/index.php` for **web** access to the application  
+`/env/dev/run` for general **CLI** to run commands  
+`/env/dev/bin/scheduled-tasks.php` for **cronjob** maintenance access  
+`/env/dev/bin/useradd` for CLI access to run the "useradd" **command** directly  
+ 
+**Staging or Production access**  
+`/env/build/public/index.php` for **web** access to the application  
+`/env/build/run` for general **CLI** to run commands  
+`/env/build/bin/scheduled-tasks.php` for **cronjob** maintenance access  
+`/env/build/bin/useradd` for CLI access to run the "useradd" **command** directly  
