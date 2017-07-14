@@ -66,11 +66,11 @@
 **Development access**  
 `/env/dev/public/index.php` for **web** access to the application  
 `/env/dev/run` for general **CLI** to run commands  
-`/env/dev/bin/scheduled-tasks.php` for **cronjob** maintenance access  
+`/env/dev/scheduled-tasks.php` for **cronjob** maintenance access  
 `/env/dev/bin/useradd` for CLI access to run the "useradd" **command** directly  
  
 **Staging or Production access**  
 `/env/build/public/index.php` for **web** access to the application  
 `/env/build/run` for general **CLI** to run commands  
-`/env/build/bin/scheduled-tasks.php` for **cronjob** maintenance access  
+`/env/build/scheduled-tasks.php` for **cronjob** maintenance access  
 `/env/build/bin/useradd` for CLI access to run the "useradd" **command** directly  
