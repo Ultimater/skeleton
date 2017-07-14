@@ -32,9 +32,9 @@
     ├── composer.json
     ├── vendor
     ├── dev
-    │   ├── cmd (general CLI entry as "development" environment)
+    │   ├── run (general CLI entry as "development" environment)
     │   ├── scheduled-tasks.php (entry point for cronjob CLI access to run maintenance and send newsletters)
-    │   ├── cmds
+    │   ├── cmd
     │   │   └── useradd (command from commands.yml alias)
     │   ├── public
     │   │   ├── index.php (web entry as "development" environment)
@@ -49,9 +49,9 @@
     │   ├── composer.json
     │   └── vendor
     └── build
-        ├── cmd (general CLI entry as "build" environment)
+        ├── run (general CLI entry as "build" environment)
         ├── scheduled-tasks.php (entry point for cronjob CLI access to run maintenance and send newsletters)
-        ├── cmds
+        ├── cmd
         │   └── useradd (command from commands.yml alias)
         ├── var
         │   ├── cache
@@ -65,12 +65,12 @@
 
 **Development access**  
 `/env/dev/public/index.php` for **web** access to the application  
-`/env/dev/cmd` for general **CLI** to run commands  
+`/env/dev/run` for general **CLI** to run commands  
 `/env/dev/scheduled-tasks.php` for **cronjob** maintenance access  
-`/env/dev/cmds/useradd` for CLI access to run the "useradd" **command** directly  
+`/env/dev/cmd/useradd` for CLI access to run the "useradd" **command** directly  
  
 **Staging or Production access**  
 `/env/build/public/index.php` for **web** access to the application  
-`/env/build/cmd` for general **CLI** to run commands  
+`/env/build/run` for general **CLI** to run commands  
 `/env/build/scheduled-tasks.php` for **cronjob** maintenance access  
-`/env/build/cmds/useradd` for CLI access to run the "useradd" **command** directly  
+`/env/build/cmd/useradd` for CLI access to run the "useradd" **command** directly  
