@@ -65,7 +65,7 @@
 
 **Development access**  
 `/env/dev/public/index.php` for **web** access to the application  
-`/env/dev/cmd for general **CLI** to run commands  
+`/env/dev/cmd` for general **CLI** to run commands  
 `/env/dev/scheduled-tasks.php` for **cronjob** maintenance access  
 `/env/dev/cmds/useradd` for CLI access to run the "useradd" **command** directly  
  
