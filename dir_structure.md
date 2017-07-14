@@ -28,9 +28,12 @@
 │   │       ├── Module.php
 │   │       └── views/ (these are views specific to this module, not all views should be shared)
 │   └── services/
+├── tests/
+│   ├── composer.json
+│   └── vendor/
+├── composer.json
+├── vendor/
 └── env/
-    ├── composer.json
-    ├── vendor/
     ├── dev/
     │   ├── run (general CLI entry as "development" environment using full command names or aliases)
     │   ├── cmd/ (commands extracted from command aliases for direct access)
@@ -45,9 +48,6 @@
     │   └─── var/
     │       ├── cache/
     │       └── logs/
-    ├── tests/
-    │   ├── composer.json
-    │   └── vendor/
     └── build
         ├── run (general CLI entry as "build" environment using full command names or aliases)
         ├── cmd/ (commands extracted from command aliases for direct access)
