@@ -43,8 +43,8 @@
     │   ├── package.json
     │   ├── node_modules/
     │   └─── var/
-    │       ├── cache
-    │       └── logs
+    │       ├── cache/
+    │       └── logs/
     ├── tests/
     │   ├── composer.json
     │   └── vendor/
