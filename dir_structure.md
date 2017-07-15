@@ -15,7 +15,8 @@
 │   │   └── views/
 │   ├── config/
 │   │   ├── commands.yml
-│   │   └── js.yml
+│   │   ├── js.yml
+│   │   └── webpack.js
 │   ├── js/
 │   │   ├── entries/
 │   │   ├── commons/
@@ -31,8 +32,13 @@
 ├── tests/
 │   ├── composer.json
 │   └── vendor/
-├── composer.json
-├── vendor/
+├── lib (third party packages)
+│   ├── composer.json
+│   ├── composer.lock
+│   ├── vendor/
+│   ├── package.json
+│   ├── package-lock.json
+│   └── node_modules/
 └── env/
     ├── dev/
     │   ├── run (general CLI entry as "development" environment using full command names or aliases)
@@ -42,12 +48,10 @@
     │   ├── public/
     │   │   ├── assets/ (either rewrite to ../../app/assets or proxy passthrough to webpack-dev-server)
     │   │   └── index.php (web entry as "development" environment)
-    │   ├── weback.config.js
-    │   ├── package.json
-    │   ├── node_modules/
-    │   └─── var/
+    │   └───var/
     │       ├── cache/
-    │       └── logs/
+    │       ├── logs/
+    │       └── webpack-cache/
     └── build
         ├── run (general CLI entry as "build" environment using full command names or aliases)
         ├── cmd/ (commands extracted from command aliases for direct access)
