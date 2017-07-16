@@ -10,7 +10,7 @@
 │   ├── common/
 │   │   ├── commands/
 │   │   ├── controllers/ (such as controllerBase and errorController)
-│   │   ├── models/ (there are models we want to share with all modules)
+│   │   ├── models/ (these are models we want to share with all modules)
 │   │   ├── plugins/
 │   │   └── views/
 │   ├── config/
@@ -32,7 +32,7 @@
 ├── tests/
 │   ├── composer.json
 │   └── vendor/
-├── lib (third party packages)
+├── lib/ (third party packages)
 │   ├── composer.json
 │   ├── composer.lock
 │   ├── vendor/
@@ -52,7 +52,7 @@
     │       ├── cache/
     │       ├── logs/
     │       └── webpack-cache/
-    └── build
+    └── build/
         ├── run (general CLI entry as "build" environment using full command names or aliases)
         ├── cmd/ (commands extracted from command aliases for direct access)
         │   ├── scheduledTasks (ex; cronjob CLI access to run maintenance and send newsletters)
