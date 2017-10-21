@@ -15,8 +15,10 @@
 │   │   ├── plugins/
 │   │   └── views/
 │   ├── config/
+│   │   ├── cli.yml
 │   │   ├── commands.yml
 │   │   ├── js.yml
+│   │   ├── web.yml
 │   │   └── webpack.js
 │   ├── webpack/
 │   │   ├── entries/
