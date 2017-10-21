@@ -7,6 +7,7 @@
 ├── schema/
 ├── app/
 │   ├── assets/
+│   │   └── public/
 │   ├── common/
 │   │   ├── commands/
 │   │   ├── controllers/ (such as controllerBase and errorController)
@@ -17,7 +18,7 @@
 │   │   ├── commands.yml
 │   │   ├── js.yml
 │   │   └── webpack.js
-│   ├── js/
+│   ├── webpack/
 │   │   ├── entries/
 │   │   ├── commons/
 │   │   └── modules/
